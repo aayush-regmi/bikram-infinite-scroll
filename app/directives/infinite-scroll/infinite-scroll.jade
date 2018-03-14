@@ -1,0 +1,15 @@
+div.posts
+    ul
+        li(ng-repeat="post in infiniteCtrl.dposts")
+            span.post
+                span.post-head
+                    label Id:
+                        p{{post.id}}
+                br
+                span.post-head
+                    label heading:
+                        p{{post.title}}
+                br
+                span.post-body
+                    label content:
+                        p{{post.body}}
